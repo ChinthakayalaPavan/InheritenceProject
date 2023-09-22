@@ -1,1 +1,26 @@
-
+package FirstProject;
+interface abc
+{
+   int vae=10;
+   public static void m1()
+   {
+       System.out.println("hlo");
+   }
+   public void m2();
+}
+class abcd implements abc
+{
+    public void m2()
+    {
+       System.out.println("Byee");
+       abc.m1();
+    }
+}
+class Interface
+{
+    public static void main(String[] args)
+    {
+        abcd a = new abcd();
+        a.m2();
+    }
+}
